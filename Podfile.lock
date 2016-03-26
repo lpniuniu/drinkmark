@@ -1,0 +1,88 @@
+PODS:
+  - Alamofire (3.3.0)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - DKChainableAnimationKit (1.6.0)
+  - SnapKit (0.20.0)
+  - ValueCoding (1.2.0)
+  - YapDatabase (2.8.3):
+    - YapDatabase/Standard (= 2.8.3)
+  - YapDatabase/Standard (2.8.3):
+    - YapDatabase/Standard/Core (= 2.8.3)
+    - YapDatabase/Standard/Extensions (= 2.8.3)
+  - YapDatabase/Standard/Core (2.8.3):
+    - CocoaLumberjack (~> 2)
+  - YapDatabase/Standard/Extensions (2.8.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/CloudKit (= 2.8.3)
+    - YapDatabase/Standard/Extensions/ConnectionProxy (= 2.8.3)
+    - YapDatabase/Standard/Extensions/FilteredViews (= 2.8.3)
+    - YapDatabase/Standard/Extensions/FullTextSearch (= 2.8.3)
+    - YapDatabase/Standard/Extensions/Hooks (= 2.8.3)
+    - YapDatabase/Standard/Extensions/Relationships (= 2.8.3)
+    - YapDatabase/Standard/Extensions/RTreeIndex (= 2.8.3)
+    - YapDatabase/Standard/Extensions/SearchResults (= 2.8.3)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.8.3)
+    - YapDatabase/Standard/Extensions/SecondaryIndex (= 2.8.3)
+    - YapDatabase/Standard/Extensions/Views (= 2.8.3)
+  - YapDatabase/Standard/Extensions/CloudKit (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/ConnectionProxy (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/FilteredViews (2.8.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/FullTextSearch (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Hooks (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Relationships (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/RTreeIndex (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/SearchResults (2.8.3):
+    - YapDatabase/Standard/Core
+    - YapDatabase/Standard/Extensions/FullTextSearch
+    - YapDatabase/Standard/Extensions/Views
+  - YapDatabase/Standard/Extensions/SecondaryIndex (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabase/Standard/Extensions/Views (2.8.3):
+    - YapDatabase/Standard/Core
+  - YapDatabaseExtensions (2.4.0):
+    - ValueCoding (= 1.2.0)
+    - YapDatabase (~> 2)
+    - YapDatabaseExtensions/Persitable (= 2.4.0)
+  - YapDatabaseExtensions/Core (2.4.0):
+    - ValueCoding (= 1.2.0)
+    - YapDatabase (~> 2)
+  - YapDatabaseExtensions/Functional (2.4.0):
+    - ValueCoding (= 1.2.0)
+    - YapDatabase (~> 2)
+    - YapDatabaseExtensions/Core
+  - YapDatabaseExtensions/Persitable (2.4.0):
+    - ValueCoding (= 1.2.0)
+    - YapDatabase (~> 2)
+    - YapDatabaseExtensions/Functional
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - DKChainableAnimationKit (~> 1.0)
+  - SnapKit (~> 0.0)
+  - YapDatabaseExtensions
+
+SPEC CHECKSUMS:
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  DKChainableAnimationKit: fe28909402825a42cc632b211eadcc39ad2bee38
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  ValueCoding: e2f7d8fee288debd762b655a8e0ba933985a6b57
+  YapDatabase: 15b6867a07ff30eac3af28794cd2262b4d0ca4ca
+  YapDatabaseExtensions: 2ff2c9651dbec18b51fdfbadc62fcdfff4dde34d
+
+COCOAPODS: 0.39.0
