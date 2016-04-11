@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ReadListViewController.swift
 //  drinkmark
 //
 //  Created by FanFamily on 16/3/25.
@@ -8,12 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ReadListViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        view!.backgroundColor = UIColor.redColor()
+        
+        view.backgroundColor = UIColor(red: 96/255, green: 56/255, blue: 17/255, alpha: 0.5)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

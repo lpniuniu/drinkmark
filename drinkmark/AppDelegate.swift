@@ -14,8 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let readlist = ReadListViewController()
+        
+        let tab = UITabBarController()
+        readlist.tabBarItem = UITabBarItem(title: "readlist", image: nil, tag: 0)
+        tab.viewControllers = [readlist];
+        
         window = UIWindow(frame:UIScreen.mainScreen().bounds)
-        window!.rootViewController = ViewController()
+        window!.rootViewController = tab
         window!.makeKeyAndVisible()
         return true
     }

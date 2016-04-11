@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BDDA9BE1CA5452200782116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDA9BD1CA5452200782116 /* AppDelegate.swift */; };
-		0BDDA9C01CA5452200782116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDA9BF1CA5452200782116 /* ViewController.swift */; };
+		0BDDA9C01CA5452200782116 /* ReadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDDA9BF1CA5452200782116 /* ReadListViewController.swift */; };
 		0BDDA9C51CA5452200782116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDDA9C41CA5452200782116 /* Assets.xcassets */; };
 		0BDDA9C81CA5452200782116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDDA9C61CA5452200782116 /* LaunchScreen.storyboard */; };
 		4F4132C9242D5B379F870B52 /* Pods_drinkmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E2BA04D9C3F06B007127F /* Pods_drinkmark.framework */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		0BDDA9BA1CA5452200782116 /* drinkmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinkmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDDA9BD1CA5452200782116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BDDA9BF1CA5452200782116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BDDA9BF1CA5452200782116 /* ReadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadListViewController.swift; sourceTree = "<group>"; };
 		0BDDA9C41CA5452200782116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BDDA9C71CA5452200782116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BDDA9C91CA5452200782116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				0BDDA9BD1CA5452200782116 /* AppDelegate.swift */,
-				0BDDA9BF1CA5452200782116 /* ViewController.swift */,
+				0BDDA9BF1CA5452200782116 /* ReadListViewController.swift */,
 				0BDDA9C41CA5452200782116 /* Assets.xcassets */,
 				0BDDA9C61CA5452200782116 /* LaunchScreen.storyboard */,
 				0BDDA9C91CA5452200782116 /* Info.plist */,
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDDA9C01CA5452200782116 /* ViewController.swift in Sources */,
+				0BDDA9C01CA5452200782116 /* ReadListViewController.swift in Sources */,
 				0BDDA9BE1CA5452200782116 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
