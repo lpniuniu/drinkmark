@@ -16,7 +16,7 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 96/255, green: 56/255, blue: 17/255, alpha: 0.5)
+        view.backgroundColor = UIColor(patternImage:UIImage(named: "readlist_back")!)
         
         readlistTableView = UITableView()
         readlistTableView.dataSource = self
@@ -26,10 +26,11 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
             make.top.equalTo(view).inset(20)
             make.left.equalTo(view)
             make.right.equalTo(view)
-            make.bottom.equalTo(view)
+            make.bottom.equalTo(view).inset(49)
         }
-        readlistTableView.alpha = 0.5
+        readlistTableView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
         readlistTableView.allowsSelection = false
+        readlistTableView.separatorStyle = .None
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,9 +47,11 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
         if cell == nil {
             cell = UITableViewCell()
         }
+        
+        cell!.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        
         let blurEffect = UIBlurEffect(style: .Light)
         let desk = UIVisualEffectView(effect: blurEffect)
-        desk.backgroundColor = UIColor.redColor()
         cell!.addSubview(desk)
         desk.layer.cornerRadius = 10
         desk.layer.masksToBounds = true;
