@@ -11,7 +11,8 @@ import SnapKit
 
 class ReadListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var readlistTableView:UITableView = UITableView()
+    private var selectedIndexes:[NSIndexPath] = []
+    private var readlistTableView:UITableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
             make.bottom.equalTo(view).inset(49)
         }
         readlistTableView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
-        readlistTableView.allowsSelection = false
+        //readlistTableView.allowsSelection = false
         readlistTableView.separatorStyle = .None
     }
 
@@ -53,6 +54,7 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
         let blurEffect = UIBlurEffect(style: .Light)
         let desk = UIVisualEffectView(effect: blurEffect)
         cell!.addSubview(desk)
+        cell!.selectionStyle = .None
         desk.layer.cornerRadius = 10
         desk.layer.masksToBounds = true;
         desk.snp_makeConstraints { (make) in
@@ -61,8 +63,40 @@ class ReadListViewController: UIViewController, UITableViewDelegate, UITableView
         return cell!
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        removeAllSelectAtIndex()
+        addSelectAtIndexPath(indexPath)
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if isSelectAtIndex(indexPath) {
+            return 200
+        }
         return 100
+    }
+    
+    private func addSelectAtIndexPath(indexPath:NSIndexPath) {
+        selectedIndexes.append(indexPath)
+    }
+    
+    private func removeSelectAtIndex(indexPath:NSIndexPath) {
+        let index = selectedIndexes.indexOf(indexPath)
+        if index != nil {
+            selectedIndexes.removeAtIndex(index!)
+        }
+    }
+    
+    private func removeAllSelectAtIndex() {
+        selectedIndexes.removeAll()
+    }
+    
+    private func isSelectAtIndex(indexPath:NSIndexPath) -> Bool {
+        if selectedIndexes.contains(indexPath) {
+            return true;
+        }
+        return false
     }
 }
 
